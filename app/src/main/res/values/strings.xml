@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Orator</string>
+
+    <string name="page_settings">Settings</string>
 </resources>
