@@ -13,7 +13,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.SettingsActivity" />
+        <activity android:name=".ui.SettingsActivity"
+            android:parentActivityName=".ui.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.HomeActivity" />
+        </activity>
 
     </application>
 
