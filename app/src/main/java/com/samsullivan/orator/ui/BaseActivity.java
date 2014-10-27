@@ -17,20 +17,15 @@ public class BaseActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         this.pageTitle = getString(R.string.app_name);
     }
 
     @Override
     public void setContentView(int layoutID) {
         super.setContentView(layoutID);
+
         createToolbar();
-    }
-
-    public void createToolbar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.layout_toolbar);
-
-        toolbar.setTitle(this.pageTitle);
-        setSupportActionBar(toolbar);
     }
 
     @Override
@@ -39,6 +34,13 @@ public class BaseActivity extends ActionBarActivity {
         inflater.inflate(R.menu.toolbar, menu);
 
         return super.onCreateOptionsMenu(menu);
+    }
+
+    private void createToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.layout_toolbar);
+        toolbar.setTitle(this.pageTitle);
+
+        setSupportActionBar(toolbar);
     }
 
     public void openSettings(MenuItem item) {
