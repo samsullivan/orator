@@ -5,4 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".ui.HomeActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/layout_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
 </RelativeLayout>
