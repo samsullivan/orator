@@ -4,5 +4,7 @@
     <item type="id" name="layout_list" />
     <item type="id" name="layout_fab" />
 
+    <item type="id" name="container_settings" />
+
     <item type="id" name="icon_settings" />
 </resources>

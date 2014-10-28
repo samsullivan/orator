@@ -6,8 +6,8 @@
 
     <include layout="@layout/toolbar_fragment" />
 
-    <ListView
-        android:id="@+id/layout_list"
+    <FrameLayout
+        android:id="@+id/container_settings"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
