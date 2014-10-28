@@ -1,11 +1,13 @@
 <resources>
 
-    <style name="BaseTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
 
         <item name="android:textColor">@color/text</item>
     </style>
+
+    <style name="Hidden" parent="android:Theme.NoDisplay" />
 
 </resources>
