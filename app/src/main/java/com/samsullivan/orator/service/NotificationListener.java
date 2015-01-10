@@ -6,6 +6,7 @@ import android.service.notification.StatusBarNotification;
 
 import com.samsullivan.orator.util.SettingsUtil;
 import com.samsullivan.orator.util.SpeechUtil;
+import com.samsullivan.orator.util.StorageUtil;
 
 public class NotificationListener extends NotificationListenerService {
 
@@ -25,7 +26,7 @@ public class NotificationListener extends NotificationListenerService {
 
     private void handleNotification(Notification notification) {
         String notifiedText = notification.tickerText.toString();
-        this.speechUtil.speak(notifiedText);
+        this.speechUtil.speak(notifiedText, StorageUtil.TYPE_NOTIFICATION);
     }
 
 }

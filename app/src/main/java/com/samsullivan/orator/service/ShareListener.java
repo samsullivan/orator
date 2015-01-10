@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.samsullivan.orator.util.SpeechUtil;
+import com.samsullivan.orator.util.StorageUtil;
 
 public class ShareListener extends Activity {
 
@@ -22,7 +23,7 @@ public class ShareListener extends Activity {
 
     public void handleShare() {
         String sharedText = getIntent().getStringExtra(Intent.EXTRA_TEXT);
-        this.speechUtil.speak(sharedText);
+        this.speechUtil.speak(sharedText, StorageUtil.TYPE_SHARE);
     }
 
 }

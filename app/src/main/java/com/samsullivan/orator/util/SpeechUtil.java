@@ -13,7 +13,9 @@ public class SpeechUtil implements TextToSpeech.OnInitListener {
         this.context = context;
     }
 
-    public void speak(String text) {
+    public void speak(String text, Integer type) {
+        StorageUtil.appendSpeech(this.context, text, type);
+
         this.text = text;
         this.tts =  new TextToSpeech(this.context, this);
     }

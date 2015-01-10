@@ -15,6 +15,7 @@ import android.widget.EditText;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 import com.samsullivan.orator.R;
 import com.samsullivan.orator.util.SpeechUtil;
+import com.samsullivan.orator.util.StorageUtil;
 
 public class HomeActivity extends BaseActivity {
 
@@ -52,7 +53,7 @@ public class HomeActivity extends BaseActivity {
                 SpeechUtil speechUtil = new SpeechUtil(getApplicationContext());
 
                 String inputText = input.getText().toString();
-                speechUtil.speak(inputText);
+                speechUtil.speak(inputText, StorageUtil.TYPE_TEXT);
             }
         });
 
@@ -68,7 +69,7 @@ public class HomeActivity extends BaseActivity {
         ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
 
         String clipboardText = clipboard.getPrimaryClip().getItemAt(0).getText().toString();
-        speechUtil.speak(clipboardText);
+        speechUtil.speak(clipboardText, StorageUtil.TYPE_CLIPBOARD);
 
         FloatingActionsMenu FAB = (FloatingActionsMenu) findViewById(R.id.layout_fab);
         FAB.collapse();
