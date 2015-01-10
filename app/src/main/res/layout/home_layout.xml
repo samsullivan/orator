@@ -22,15 +22,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="16dp"
-            android:src="@drawable/create"
             fab:fab_addButtonColorNormal="@color/accent"
-            fab:fab_addButtonColorPressed="@color/accent_dark">
+            fab:fab_addButtonColorPressed="@color/accent_dark"
+            fab:fab_labelStyle="@style/FABMenu">
 
             <com.getbase.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 fab:fab_colorNormal="@color/icons"
                 fab:fab_colorPressed="@color/divider"
+                fab:fab_icon="@drawable/clipboard"
                 fab:fab_title="Clipboard"
                 android:onClick="clickNewClipboard" />
 
@@ -39,6 +40,7 @@
                 android:layout_height="wrap_content"
                 fab:fab_colorNormal="@color/icons"
                 fab:fab_colorPressed="@color/divider"
+                fab:fab_icon="@drawable/pencil"
                 fab:fab_title="Text"
                 android:onClick="clickNewText" />
 
