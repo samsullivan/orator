@@ -12,11 +12,6 @@ public class StorageUtil {
 
     private static final String FILE_NAME = "speech.history";
 
-    public static final Integer TYPE_NOTIFICATION = 0;
-    public static final Integer TYPE_SHARE = 1;
-    public static final Integer TYPE_TEXT = 2;
-    public static final Integer TYPE_CLIPBOARD = 3;
-
     public static JSONArray getSpeeches(Context context) {
         try {
             FileInputStream fis = context.openFileInput(StorageUtil.FILE_NAME);
